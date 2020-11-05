@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="plugin.video.hlscat" name="HLSCAT" version="1.0.0" provider-name="KevinVDB">
   <requires>
-    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="xbmc.python" version="2.25.0"/><!--Python 2 KODI <= 18-->
+    <!--<import addon="xbmc.python" version="3.0.0"/>--><!--Python 3 KODI >= 19--> 
   </requires>
   <extension point="xbmc.python.pluginsource" library="addon.py">
     <provides>video</provides>
