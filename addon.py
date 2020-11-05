@@ -42,7 +42,7 @@ def showCountry():
   
 def showStream():
     listing = []
-    url = unquote(sys.argv[2].split('?country=')[1])
+    url = unquote(sys.argv[2].split('?url=')[1])
     html = fetchHtml(url)
     pages = re.search(re_pages, html)
     name = re.findall(re_name, html)
