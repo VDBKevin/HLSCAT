@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.hlscat" name="HLSCAT" version="1.0.0" provider-name="KevinVDB">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">HLSCAT streams to kodi</summary>
+    <description lang="en_GB">HLS Cat is site that aggregates iptv list from other public accessible sites. We check daily our aggregated free iptv list to be sure that all streams are online, or at least note ones that are temporary down. HLS Cat gives you the ability to customize and download free m3u8 lists and play them directly in your favorable video/iptv player without the hassle of editing list files and understanding the m3u structure.</description>
+    <disclaimer lang="en_GB">!!! Use at your own risk !!! Me the author can not be hold liable for any consequences caused by using this addon!</disclaimer>
+    <language>en</language>
+    <platform>all</platform>
+    <license>Unlicence</license>
+    <website>http://www.hlscat.com</website>
+    <source>https://github.com/VDBKevin/HSLCAT</source>
+    <news>v1.0.0</news>
+    <assets>
+        <icon>resources/media/icon.png</icon>
+        <fanart>resources/media/fanart.jpg</fanart>
+        <screenshot>resources/media/screenshot1.jpg</screenshot>
+		<screenshot>resources/media/screenshot2.jpg</screenshot>
+		<screenshot>resources/media/screenshot3.jpg</screenshot>
+    </assets>
+  </extension>
+</addon>
