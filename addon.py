@@ -34,7 +34,7 @@ def showCountry():
     country = re.findall(re_country, fetchHtml(URL))
 
     for index in country:
-         listing.append((sys.argv[0] + '?country=' + index[0], xbmcgui.ListItem(label=index[1]), True))
+         listing.append((sys.argv[0] + '?url=' + index[0], xbmcgui.ListItem(label=index[1]), True))
 
     xbmcplugin.addSortMethod(int(sys.argv[1]), xbmcplugin.SORT_METHOD_LABEL)
     xbmcplugin.addDirectoryItems(int(sys.argv[1]), listing, len(listing))
@@ -94,7 +94,7 @@ def fetchHtml(url):
     except URLError as e:
         xbmcgui.Dialog().notification(NAME, 'Unable to connect to the server.' + str(e.reason), xbmcgui.NOTIFICATION_ERROR, 5000)
 
-if sys.argv[2].startswith('?country='):
+if sys.argv[2].startswith('?url='):
     showStream()
 else:
     showCountry()
